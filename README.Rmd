@@ -20,7 +20,7 @@ The `powers` package was developed by Vincenzo Coia, and the `inchtocm` function
 
 ## Installation
 
-You can install the updated version of `powers` from [GitHub](https://CRAN.R-project.org) with:
+You can install the updated version of `powers` from [GitHub](https://github.com/Caroline-Seip/hw07) with:
 
 ```{r}
 #install.packages("powers")
