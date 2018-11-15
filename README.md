@@ -1,39 +1,30 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+`powers`
+========
 
-[![Build
-Status](https://travis-ci.org/vincenzocoia/powers.svg?branch=master)](https://travis-ci.org/vincenzocoia/powers)
+The goal of `powers` is to convert vector values, by either squaring the input, cubing the input, taking a reciprocal of the input, or converting the input from inches to centimetres.
 
-**Note**: This R package is not mean to be “serious”. It’s just for
-teaching purposes.
+The `powers` package was developed by Vincenzo Coia, and the `inchtocm` function was added by Caroline Seip
 
-# powers
+Installation
+------------
 
-This is an R package that gives `sqrt()` friends by providing other
-power functions.
-
-## Installation
-
-You can install powers from github with:
+You can install the released version of `powers` from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("vincenzocoia/powers")
+#install.packages("powers")
+suppressPackageStartupMessages(library(powers))
 ```
 
-## Example
+Example
+-------
 
-See the vignette for more extensive use, but here’s an example:
+For example the `powers` package includes functions to...
+
+Square a vector, using `square`:
 
 ``` r
-powers::reciprocal(2)
-#> [1] 0.5
+square(2)
+#> [1] 4
 ```
-
-## For Developers
-
-(Again, I don’t actually intend for anyone to develop this silly
-package, but if I did, here’s what I’d write.)
-
-Use the internal `pow` function as the machinery for the front-end
-functions such as `square`, `cube`, and `reciprocal`.

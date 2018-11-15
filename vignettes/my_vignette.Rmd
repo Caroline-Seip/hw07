@@ -1,0 +1,64 @@
+---
+title: "Use of the (updated) powers package"
+author: "Caroline Seip"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Use of the (updated) powers package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+#Introduction
+
+The `powers` package was developed by Vincenzo Coia. I have added the `inchtocm` function to this package.
+
+#Load package
+
+Start by loading the `powers` package:
+```{r}
+suppressPackageStartupMessages(library(powers))
+```
+
+#Examples 
+
+The powers package includes functions to...
+
+Square a vector, using `square`:
+
+```{r}
+square(2)
+```
+
+Cube a vector, using `cube`:
+
+```{r}
+cube(3)
+```
+
+Take the reciprocal of a vector, using `reciprocal`:
+
+```{r}
+reciprocal(4)
+```
+
+Convert inches to centimetres, using `inchtocm`:
+
+```{r}
+inchtocm(12)
+```
+
+These functions can also be applied to a list of vectors, check it out:
+```{r}
+mylist <- list(1:10)
+lapply(mylist, inchtocm)
+```
+
+How fun!
